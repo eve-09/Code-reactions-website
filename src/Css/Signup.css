@@ -1,0 +1,92 @@
+.form-container {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  border-radius: 5px;
+  padding: 10vh 5vw;
+  width: 40vw;
+  background-image: url("https://image.freepik.com/free-vector/white-abstract-background-theme_23-2148830883.jpg");
+  background-size: cover;
+}
+
+.field {
+  border: solid 2px black;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  background-color: #fff;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 5px !important;
+  box-sizing: border-box;
+  border: 1.5px solid #555 !important;
+  background-color: white !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-radius: 5px;
+  border: 2px solid green !important;
+  background-color: white !important;
+}
+textarea {
+  border: solid 1.5px black;
+  border-radius: 5px;
+  background-color: #fff;
+  height: 15vh;
+  margin-top: 5vh;
+}
+
+.welcome {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.ghost-round {
+  cursor: pointer;
+  background: rgba(255, 76, 76, 0.75);
+  border: 1px solid rgba(255, 76, 76, 0.75);
+  padding: 0 3vw;
+  border-radius: 25px;
+  align-self: flex-end;
+  font-size: 19px;
+  font-size: 1.3rem;
+  font-family: roboto;
+  font-weight: 300;
+  line-height: 2.5em;
+  color: white;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  margin-top: 5vh;
+  margin-bottom: -2vh;
+}
+
+.send-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 1050px) {
+  .form-container {
+    min-width: 65vw;
+    margin-top: 5vh;
+    padding: 6vh 5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    min-width: 85vw;
+  }
+}
