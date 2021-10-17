@@ -6,6 +6,11 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { useMediaQuery } from "@react-hook/media-query";
 import "../Css/Home.css";
+import "../it-con.png";
+import "../Web-Development.jpg";
+import "../app-dev.png";
+import "../cloud.jpg";
+import "../net-security.jpg";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -47,8 +52,9 @@ export default function VerticalTabs() {
     setValue(newValue);
   };
 
-  const isRowBased = useMediaQuery("(max-width: 400px)");
+  const isRowBased = useMediaQuery("(max-width: 420px)");
   const isHorizontal = useMediaQuery("(max-width: 600px)");
+  const is420 = useMediaQuery("(min-width: 360px and max-width: 420px)");
 
   return (
     <Box
@@ -75,11 +81,11 @@ export default function VerticalTabs() {
           label="IT Consulting"
           {...a11yProps(0)}
           style={{
-            fontSize: isRowBased ? "11px" : "20px",
+            fontSize: isRowBased ? "2vh" : "20px",
             marginBottom: "4vh",
-            marginTop: isRowBased ? "-40px" : "0",
+            marginTop: isRowBased ? (is420 ? "10px" : "-52px") : "-30px",
             width: isHorizontal ? "30vw" : "auto",
-            height: isHorizontal ? "15vh" : "auto",
+            height: isHorizontal ? "20vh" : "auto",
             flexWrap: isHorizontal ? "wrap" : "nowrap",
           }}
         />
@@ -87,11 +93,11 @@ export default function VerticalTabs() {
           label="App Development"
           {...a11yProps(1)}
           style={{
-            fontSize: isRowBased ? "11px" : "20px",
+            fontSize: isRowBased ? "2vh" : "20px",
             marginBottom: "4vh",
-            marginTop: isRowBased ? "-40px" : "0",
+            marginTop: isRowBased ? (is420 ? "10px" : "-52px") : "-30px",
             width: isHorizontal ? "34vw" : "auto",
-            height: isHorizontal ? "15vh" : "auto",
+            height: isHorizontal ? "20vh" : "auto",
             flexWrap: isHorizontal ? "wrap" : "nowrap",
           }}
         />
@@ -99,11 +105,11 @@ export default function VerticalTabs() {
           label="Web Designing"
           {...a11yProps(2)}
           style={{
-            fontSize: isRowBased ? "11px" : "20px",
+            fontSize: isRowBased ? "2vh" : "20px",
             marginBottom: "4vh",
-            marginTop: isRowBased ? "-40px" : "0",
+            marginTop: isRowBased ? (is420 ? "10px" : "-52px") : "-30px",
             width: isHorizontal ? "29vw" : "auto",
-            height: isHorizontal ? "15vh" : "auto",
+            height: isHorizontal ? "20vh" : "auto",
             flexWrap: isHorizontal ? "wrap" : "nowrap",
           }}
         />
@@ -111,11 +117,11 @@ export default function VerticalTabs() {
           label="Network Security"
           {...a11yProps(3)}
           style={{
-            fontSize: isRowBased ? "11px" : "20px",
+            fontSize: isRowBased ? "2vh" : "20px",
             marginBottom: "4vh",
-            marginTop: isRowBased ? "-40px" : "0",
+            marginTop: isRowBased ? (is420 ? "10px" : "-52px") : "-30px",
             width: isHorizontal ? "30vw" : "auto",
-            height: isHorizontal ? "15vh" : "auto",
+            height: isHorizontal ? "20vh" : "auto",
             flexWrap: isHorizontal ? "wrap" : "nowrap",
           }}
         />
@@ -123,11 +129,11 @@ export default function VerticalTabs() {
           label="Cloud Services"
           {...a11yProps(4)}
           style={{
-            fontSize: isRowBased ? "11px" : "20px",
+            fontSize: isRowBased ? "2vh" : "20px",
             marginBottom: "4vh",
-            marginTop: isRowBased ? "-40px" : "0",
+            marginTop: isRowBased ? (is420 ? "10px" : "-52px") : "-30px",
             width: isHorizontal ? "30vw" : "auto",
-            height: isHorizontal ? "15vh" : "auto",
+            height: isHorizontal ? "20vh" : "auto",
             flexWrap: isHorizontal ? "wrap" : "nowrap",
           }}
         />
@@ -135,7 +141,7 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={0}>
         <div className="service-tab">
           <img
-            src="https://www.6degreesit.com/wp-content/uploads/2019/02/consultancy.png"
+            src="../it-con.png"
             alt="it-consulting"
             className="service-img"
           />
@@ -149,11 +155,7 @@ export default function VerticalTabs() {
       </TabPanel>
       <TabPanel value={value} index={1}>
         <div className="service-tab">
-          <img
-            src="https://www.lx.com.sg/wp-content/uploads/2020/08/mobile-app-dev.png"
-            alt="app-dev"
-            className="service-img"
-          />
+          <img src="../app-dev.png" alt="app-dev" className="service-img" />
           <div className="service-text">
             We offer a full package of application design, integration,
             management and deployment along with maintenance and future
@@ -165,7 +167,7 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={2}>
         <div className="service-tab">
           <img
-            src="https://www.reachfirst.com/wp-content/uploads/2018/08/Web-Development.jpg"
+            src="../Web-Development.jpg"
             alt="web-design"
             className="service-img"
           />
@@ -180,7 +182,7 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={3}>
         <div className="service-tab">
           <img
-            src="https://www.ttsystems.com/application/files/9715/9783/7156/img_02.jpg"
+            src="../net-security.jpg"
             alt="network-security"
             className="service-img"
           />
@@ -195,7 +197,7 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={4}>
         <div className="service-tab">
           <img
-            src="https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=https%3A%2F%2Fi.nextmedia.com.au%2FNews%2FiStock-1137011043.jpg&w=480&c=0&s=1"
+            src="../cloud.jpg"
             alt="cloud-services"
             className="service-img"
           />

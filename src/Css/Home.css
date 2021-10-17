@@ -178,14 +178,20 @@
 }
 
 /* SERVICES SECTION */
+@media (max-width: 1300px) {
+  .top-img {
+    height: 50%;
+    min-width: 45%;
+  }
+}
 
 @media (max-width: 1050px) {
   .logo {
-    margin-top: 1.2vh;
+    margin-top: -2px;
   }
   .main {
-    margin-top: 1vh;
-    height: 40vh;
+    margin-top: 9vh;
+    height: 100vh;
     display: flex;
     align-items: center;
   }
@@ -198,15 +204,27 @@
   .l-1 {
     display: flex;
     flex-wrap: wrap;
+    font-size: 32px;
   }
   .top-img {
-    height: 50%;
+    height: 65%;
   }
   .service-tab {
     margin-top: -10vh;
   }
   .signup {
     margin-top: -2vh;
+  }
+}
+@media (max-width: 900px) {
+  .l-1 {
+    font-size: 28px;
+  }
+  .top-img {
+    height: 80%;
+  }
+  .service-text {
+    font-size: 24px;
   }
 }
 @media (max-width: 600px) {
@@ -231,7 +249,7 @@
 
   .l-1,
   .l-2 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .head {
@@ -275,7 +293,8 @@
       rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   }
   .main {
-    margin-top: -8vh;
+    margin-top: 8vh;
+    min-height: 100vh;
   }
   .top-img {
     height: 30vh;
@@ -312,6 +331,12 @@
   }
   .tech-stack {
     margin-top: 35vh;
+  }
+}
+@media (min-height: 420px) {
+  .main {
+    height: 100vh;
+    margin-top: 9vh;
   }
 }
 @media (max-width: 380px) {

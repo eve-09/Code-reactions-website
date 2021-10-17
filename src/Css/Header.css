@@ -64,13 +64,24 @@ body {
 }
 
 .logo {
-  height: 200px;
+  min-height: 200px;
   width: 200px;
   position: absolute;
-  top: -10vh;
+  top: -15vh;
+  margin: 0;
   cursor: pointer;
 }
 
+@media (max-width: 1300px) {
+  .logo {
+    margin-top: 6vh;
+  }
+}
+@media (max-width: 1050px) {
+  .logo {
+    margin-top: 2.5vh !important;
+  }
+}
 @media (max-width: 600px) {
   /* .nav > .nav-btn {
     display: inline-block;
@@ -125,8 +136,24 @@ body {
     margin-top: 1.5vh;
   }
 }
-@media (max-width: 400px) {
+@media (min-height: 420px) {
+  .logo {
+    margin-top: 6vh !important;
+  }
+}
+@media (max-width: 380px) {
   .nav {
     height: 9vh;
   }
+  .logo {
+    margin-top: 9px !important;
+  }
 }
+/* @media (min-width: 340px) {
+  .nav {
+    height: 9vh;
+  }
+  .logo {
+    min-height: 6vh;
+  }
+} */

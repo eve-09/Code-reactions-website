@@ -79,7 +79,7 @@ textarea {
 
 @media (max-width: 1050px) {
   .form-container {
-    min-width: 65vw;
+    min-width: 55vw;
     margin-top: 5vh;
     padding: 6vh 5vw;
   }
